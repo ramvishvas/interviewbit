@@ -15,18 +15,19 @@
 // s = ID
 
 // Return: [1, 3, 2]
+
+// Algorithms...................................................
+        // whenever you encounter an I add "i" to ans and pop all element and add it to ans;
+        // and if you encounter an D push it to stack.
+        // examle 1 2 3 4 5 6 7 8 9 10
+        // string I D D D I I D I D
+// end............................................................
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
     public ArrayList<Integer> findPerm(final String A, int B) {
         ArrayList<Integer> ans = new ArrayList<Integer>();
         Stack<Integer> stack = new Stack<Integer>();
         // given B = a.length()-1
-        // Algorithm is simple
-        // whenever you encounter an I
-        // pop all element and add it to ans;
-        // and if you encounter an D add it to stack.
-        // examle 1 2 3 4 5 6 7 8 9 10
-        // string I D D D I I D I D
         for (int i = 1; i < B; i++) {
             if (A.charAt(i - 1) == 'I') {
                 ans.add(i);
