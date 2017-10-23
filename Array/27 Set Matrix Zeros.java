@@ -1,30 +1,30 @@
-Given an m x n matrix of 0s and 1s, if an element is 0, set its entire row and column to 0.
+// Given an m x n matrix of 0s and 1s, if an element is 0, set its entire row and column to 0.
 
-Do it in place.
+// Do it in place.
 
-Example
+// Example
 
-Given array A as
+// Given array A as
 
-1 0 1
-1 1 1 
-1 1 1
-On returning, the array A should be :
+// 1 0 1
+// 1 1 1 
+// 1 1 1
+// On returning, the array A should be :
 
-0 0 0
-1 0 1
-1 0 1
-Note that this will be evaluated on the extra memory used. Try to minimize the space and time complexity.
+// 0 0 0
+// 1 0 1
+// 1 0 1
+// Note that this will be evaluated on the extra memory used. Try to minimize the space and time complexity.
 
-Algorithhm  ...............................
-1) From all index Starting at zero to last
-       if  indexOf(0) exists set all element of that row to 0 and store
-            all index of zero to another temprory arrayList and if index already exists then skip that index.
-       else
-           leave that row as it is.
-2) for each element of ArrayList set all elements of currosponding Colunn to 0
+// Algorithhm  ...............................
+// 1) From all index Starting at zero to last
+//        if  indexOf(0) exists set all element of that row to 0 and store
+//             all index of zero to another temprory arrayList and if index already exists then skip that index.
+//        else
+//            leave that row as it is.
+// 2) for each element of ArrayList set all elements of currosponding Colunn to 0
 
-end .....................................
+// end .....................................
 
 
 public class Solution {
